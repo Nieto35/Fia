@@ -13,7 +13,7 @@ const Calendar = ({
   setSelectedDays: any
 }) => {
   const handleDayClick = (index: number) => {
-    setSelectedDays((prev) => prev.map((selected, i) => (i === index ? !selected : selected)))
+    setSelectedDays((prev: boolean[]) => prev.map((selected: boolean, i: number) => (i === index ? !selected : selected)))
   }
 
   return (

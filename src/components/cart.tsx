@@ -6,20 +6,29 @@ import { FaRegTrashCan } from 'react-icons/fa6'
 import { cards } from './infocards';
 import { CartComponent } from './cartComponent';
 
+interface Product {
+  productId: string;
+  id: string;
+  title: string;
+  image: string;
+  selectedDays: number;
+  price: number;
+}
+
 export const Cart = () => {
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState<Product[]>([]);
     const [reset, setReset] = useState(false);
 
     const handleReset = () => {
         setReset(!reset);
     }
-    
+
 
   useEffect(() => {
     const cookieProducts = Cookies.get('products');
     if (cookieProducts) {
       const parsedProducts = JSON.parse(cookieProducts);
-      const detailedProducts = parsedProducts.map((product) => {
+      const detailedProducts = parsedProducts.map((product: any) => {
         const cardDetails = cards.find((card) => card.id === product.id);
         return {
           ...product,

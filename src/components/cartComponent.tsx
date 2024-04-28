@@ -2,10 +2,15 @@ import Cookies from 'js-cookie'
 import { FaRegTrashCan } from 'react-icons/fa6'
 import { LuEuro } from "react-icons/lu";
 
+interface Product {
+  productId: string;
+  // Agrega aquí cualquier otra propiedad que los productos puedan tener
+}
+
 export const CartComponent = ({handleReset, id, image, days, title, price, productId}: any) => {
   const allDays = ['23', '24', '25', '26', '27'];
   const selectedDays = allDays.filter((day, index) => days[index]);
-  const numberOfSelectedDays = days.reduce((total, daySelected) => daySelected ? total + 1 : total, 0);
+  const numberOfSelectedDays = days.reduce((total: number, daySelected: boolean) => daySelected ? total + 1 : total, 0);
   const totalPrice = price * numberOfSelectedDays;
 
   const deleteProduct = (productId: any) => {
@@ -15,7 +20,7 @@ export const CartComponent = ({handleReset, id, image, days, title, price, produ
       const products = JSON.parse(currentProducts);
   
       // Filtra el array de productos para excluir el producto con el productId dado
-      const updatedProducts = products.filter(product => product.productId !== productId);
+      const updatedProducts = products.filter((product: Product) => product.productId !== productId);
   
       // Guarda los productos actualizados en las cookies
       Cookies.set('products', JSON.stringify(updatedProducts));
