@@ -48,7 +48,7 @@ export default function Navbar()  {
           </React.Fragment>
         ))
       }
-        <a href="/" className="block lg:hidden">
+        <a href="/Fia" className="block lg:hidden">
           <DrawnXLogo />
         </a>
         <HamburgerButton toggleMenu={toggleMenu} isOpen={isOpen} />
