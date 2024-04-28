@@ -6,7 +6,7 @@ export const DrawnXLogo = () => {
 	role="img"
 	aria-label="Logo la placita delivery"
     className="w-10"
-	src="/logos/fia-seeklogo.svg"
+	src="https://nieto35.github.io/Fia/logos/fia-seeklogo.svg"
     alt="logo la placita delivery"
 />
     )

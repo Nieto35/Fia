@@ -67,7 +67,7 @@ export default function Navbar()  {
           </div>
           <nav className="flex w-full flex-col items-center gap-5">
             <img
-              src="/logos/fia-motorsport-games-2024-neg.svg"
+              src="https://nieto35.github.io/Fia/logos/fia-motorsport-games-2024-neg.svg"
               alt="la placita logo"
               className="accent-drop-shadow my-4 max-w-60 drop-shadow-lg"
               loading="lazy"

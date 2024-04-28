@@ -14,7 +14,7 @@ import { IoIosArrowForward } from 'react-icons/io'
 export const cards = [
   {
     id: 1,
-    image: '/cards/paella-valenciana.jpg',
+    image: 'https://nieto35.github.io/Fia/cards/paella-valenciana.jpg',
     title: 'Paella Valenciana',
     icon: <PiBowlFood size={50} />,
     price: 20,
@@ -37,7 +37,7 @@ export const cards = [
   },
   {
     id: 2,
-    image: '/cards/croquetas.jpg',
+    image: 'https://nieto35.github.io/Fia/cards/croquetas.jpg',
     title: 'Croquetas',
     icon: <GiHotMeal size={50} />,
     price: 30,
@@ -60,7 +60,7 @@ export const cards = [
   },
   {
     id: 3,
-    image: '/cards/sandwich.jpg',
+    image: 'https://nieto35.github.io/Fia/cards/sandwich.jpg',
     title: 'Sandwich de atún',
     icon: <IoFishOutline size={50} />,
     price: 10,
@@ -87,7 +87,7 @@ export const cards = [
   },
   {
     id: 4,
-    image: '/cards/ensalada.jpg',
+    image: 'https://nieto35.github.io/Fia/cards/ensalada.jpg',
     title: 'Ensalada de garbanzos',
     icon: <LuVegan size={50} />,
     price: 40,

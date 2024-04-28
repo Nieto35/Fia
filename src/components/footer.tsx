@@ -11,7 +11,7 @@ export default function Footer() {
                 role="img"
                 aria-label="Logo la placita delivery"
                 className="w-32"
-                src="/logos/fia-motorsport-games-2024-white.svg"
+                src="https://nieto35.github.io/Fia/logos/fia-motorsport-games-2024-white.svg"
                 alt="logo la placita delivery"
                 />
             </div>
@@ -24,7 +24,7 @@ export default function Footer() {
                     role="img"
                     aria-label="Logo la placita delivery"
                     className="w-8 h-8 text-white"
-                    src="/redes/facebook.svg"
+                    src="https://nieto35.github.io/Fia/redes/facebook.svg"
                     alt="logo la placita delivery"
                     />
                 </a>
@@ -33,7 +33,7 @@ export default function Footer() {
                     role="img"
                     aria-label="Logo la placita delivery"
                     className="w-8 h-8"
-                    src="/redes/instagram.svg"
+                    src="https://nieto35.github.io/Fia/redes/instagram.svg"
                     alt="logo la placita delivery"
                     />
                 </a>
@@ -42,7 +42,7 @@ export default function Footer() {
                     role="img"
                     aria-label="Logo la placita delivery"
                     className="w-8 h-8"
-                    src="/redes/icon--threads--black.svg"
+                    src="https://nieto35.github.io/Fia/redes/icon--threads--black.svg"
                     alt="logo la placita delivery"
                     />
                 </a>
