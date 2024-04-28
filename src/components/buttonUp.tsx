@@ -3,10 +3,13 @@
 import  { useEffect, useRef, useState } from 'react';
 import Cookies from 'js-cookie';
 import { CiShoppingCart } from "react-icons/ci"
+import { useRouter } from 'next/navigation'
+
 
 export default function ScrollToTopButton ({reset} : {reset: boolean}) {
     const buttonRef = useRef<HTMLButtonElement>(null);
     const [productCount, setProductCount] = useState(0);
+    const router = useRouter();
 
     useEffect(() => {
         // Obtén los productos actuales de las cookies
@@ -20,7 +23,7 @@ export default function ScrollToTopButton ({reset} : {reset: boolean}) {
     }, [reset]);
 
     const handleClick = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        router.push('/cart');
     };
 
     // Si no hay productos, no mostrar el botón

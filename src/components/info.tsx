@@ -1,6 +1,6 @@
 export default function Info () {
   return (
-    <div className="mt-16 relative">
+    <div className="mt-16 relative lg:mt-56">
       <img src="/comida.webp" alt="" className="w-full object-cover h-[200px] " />
       <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-80"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>

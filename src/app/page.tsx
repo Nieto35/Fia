@@ -7,8 +7,6 @@ import Header from '@/components/header'
 import HowBuy from '@/components/howBuy'
 import Info from '@/components/info'
 import Navbar from '@/components/navbar'
-import News from '@/components/news'
-import NewsDesktop from '@/components/newsDesktop'
 import React from 'react'
 import {useState} from 'react'
 

@@ -17,6 +17,7 @@ export const cards = [
     image: '/cards/paella-valenciana.jpg',
     title: 'Paella Valenciana',
     icon: <PiBowlFood size={50} />,
+    price: 20,
     description: (
       <ul>
         <li className="flex items-center">
@@ -39,6 +40,7 @@ export const cards = [
     image: '/cards/croquetas.jpg',
     title: 'Croquetas',
     icon: <GiHotMeal size={50} />,
+    price: 30,
     description: (
         <ul>
         <li className="flex items-center">
@@ -61,6 +63,7 @@ export const cards = [
     image: '/cards/sandwich.jpg',
     title: 'Sandwich de atún',
     icon: <IoFishOutline size={50} />,
+    price: 10,
     description: (
       <ul>
         <li className="flex items-center">
@@ -87,6 +90,7 @@ export const cards = [
     image: '/cards/ensalada.jpg',
     title: 'Ensalada de garbanzos',
     icon: <LuVegan size={50} />,
+    price: 40,
     description: (
         <ul>
         <li className="flex items-center">
