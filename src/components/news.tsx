@@ -14,7 +14,7 @@ export default function News  () {
       image: '/news/medellin.png',
       title: 'Alcaldia medellin',
       link: "https://twitter.com/AlcaldiadeMed/status/1290999886276710400",
-      description: <p>@laPlacitaDelivery apoya a productores rurales con la entrega de domicilios de manera sostenible.</p>
+      description: <p>@FiaValencia apoya a productores rurales con la entrega de domicilios de manera sostenible.</p>
     }
 
     // Add as many cards as you want

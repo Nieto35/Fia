@@ -29,7 +29,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, image, canonical }) => {
       <meta charSet="UTF-8" />
       <meta name="description" content={description} />
 
-      <link rel="preconnect" href="https://cdn.laplacitadelivery.dev" />
+      <link rel="preconnect" href="https://cdn.FiaValencia.dev" />
       <link rel="preload" href={poppins} as="font" type="font/woff2" crossOrigin="" />
 
 
@@ -40,8 +40,8 @@ const SEO: React.FC<SEOProps> = ({ title, description, image, canonical }) => {
       <meta name="keywords" content="comida, opciones, menús" />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@laplacitadelivery" />
-      <meta name="twitter:creator" content="@laplacitadelivery" />
+      <meta name="twitter:site" content="@FiaValencia" />
+      <meta name="twitter:creator" content="@FiaValencia" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={new URL(image, imageURL).toString()} />
