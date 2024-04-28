@@ -1,0 +1,67 @@
+{
+    "start_url": "/",
+    "name": "La placita delivery",
+    "short_name": "La placita",
+    "description": "Web Oficial de La Placita delivery, tienda de mercados campesinos.",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "/favicon-144x144.png",
+            "sizes": "150x150",
+            "type": "image/png"
+          },
+      {
+        "src": "/logos/favicon-150x150.jpg",
+        "sizes": "150x150",
+        "type": "image/jpg"
+      },
+      {
+        "src": "/favicon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+      
+    ],
+    "screenshots": [
+        {
+            "src": "/screenshots/desktop_1.jpg",
+            "type": "image/jpeg",
+            "sizes": "1024x964",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshots/desktop_2.jpg",
+            "type": "image/jpeg",
+            "sizes": "1024x964",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshots/desktop_3.jpg",
+            "type": "image/jpeg",
+            "sizes": "1024x964",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshots/mobile_1.jpg",
+            "type": "image/jpeg",
+            "sizes": "360x593",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/screenshots/mobile_2.jpg",
+            "type": "image/jpeg",
+            "sizes": "360x593",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/screenshots/mobile_3.jpg",
+            "type": "image/jpeg",
+            "sizes": "360x593",
+            "form_factor": "narrow"
+        }
+    ]
+  }
+  

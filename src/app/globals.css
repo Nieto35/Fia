@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('/fonts/poppins-bold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('/fonts/poppins-extrabold-webfont.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255; /* color blanco */
+  --background-end-rgb: 255, 255, 255; /* color blanco */
+  --background-color: 255, 255, 255;
+  --my-green-color: 127, 143, 97;
+}
+
+
+/* Anula el modo oscuro predeterminado del navegador */
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255; /* color blanco */
+    --background-end-rgb: 255, 255, 255; /* color blanco */
+    --background-color: 255, 255, 255;
+
+    --my-green-color: 127, 143, 97;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: 'Poppins', sans-serif !important;
+  background-color: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+

@@ -1,0 +1,20 @@
+.gridBottomBarContainer {
+    grid-template-columns: 1fr 6rem 1fr;
+    grid-template-rows: 4px;
+}
+
+@media (min-width: 1024px) {
+    .gridBottomBarContainer {
+        grid-template-columns: 1fr 9rem 1fr;
+    }
+}
+
+.nav-item .background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(221, 221, 221, 20%) 0%, transparent 100%);
+    transition: opacity 0.3s;
+}

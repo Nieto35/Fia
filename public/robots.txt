@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://laplacitadelivery.com
+
+# Sitemaps
+Sitemap: https://laplacitadelivery.com/sitemap-index.xml
