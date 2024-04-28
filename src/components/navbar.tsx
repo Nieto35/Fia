@@ -12,7 +12,7 @@ export default function Navbar()  {
   const [isOpen, setIsOpen] = useState(false);
 
   const pages = [
-    {name: 'Inicio', href: '/'},
+    {name: 'Inicio', href: '/Fia'},
     { name: 'Menús', href: '/#' },
     { name: '¿Cómo comprar?', href: '/#'},
   ].map((page) => ({
@@ -116,7 +116,7 @@ export default function Navbar()  {
             }}
           ></div>
           <div className="-ml-[4px] -mr-[4px]">
-            <a href="/">
+            <a href="/Fia">
               <HeroLogo />
             </a>
           </div>
