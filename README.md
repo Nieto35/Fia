@@ -7,10 +7,10 @@
   <img src="./public/LOGO-PLACITA-WEB.jpg" alt="Logo" width="800" />
 </a>
 
-## Web La placita delivery
+## Web Fia Valencia
 
 Este es un proyecto para practicar las últimas versiones de lenguajes y tecnologías,
-utilizando como ayuda una empresa existente "La placita delivery".
+utilizando como ayuda una empresa existente "Fia Valencia".
 
 </div>
 

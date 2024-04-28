@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   icons: {
     icon: '/delivery.png',
   },
-  title: "La Placita Delivery",
-  description: "Mercado en línea para adquirir productos en combos, solo con productos locales que apoyan a los campesinos.",
+  title: "Fia Valencia",
+  description: "Pagina para comprar comida de fia Valencia.",
 };
 
 

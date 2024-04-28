@@ -27,7 +27,7 @@ export default function Navbar()  {
 
   return (
     <header className="mb-1 h-16 max-w-[100vw] lg:h-24">
-      <SEO canonical='https://laplacitadelivery.com/' title="La Placita Delivery" description="Web Oficial de La Placita delivery, tienda de mercados campesinos." image='/LOGO-PLACITA-WEB.jpg' />
+      <SEO canonical='https://laplacitadelivery.com/' title="Fia Valencia" description="Web Oficial de Fia Valencia, pagina para comprar comida Valencia." image='/LOGO-PLACITA-WEB.jpg' />
       <nav className="group flex h-full w-full items-center justify-between px-10 lg:justify-center">
       {
         pages.map(({ name, href, active }, key) => (

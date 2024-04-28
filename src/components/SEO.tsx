@@ -37,7 +37,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, image, canonical }) => {
       <meta name="viewport" content="width=device-width" />
       <meta name="theme-color" content="#FFFFFF" />
 
-      <meta name="keywords" content="mercado, campesino, comida, medellin, mercado, compra" />
+      <meta name="keywords" content="comida, opciones, menús" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@laplacitadelivery" />
@@ -50,7 +50,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, image, canonical }) => {
       <meta name="og:title" content={title} />
       <meta name="og:description" content={description} />
       <meta name="og:url" content={imageURL} />
-      <meta name="og:site_name" content="La placita delivery" />
+      <meta name="og:site_name" content="Fia Valencia" />
       <meta name="og:type" content="website" />
       <meta name="og:locale" content="es_ES" />
 

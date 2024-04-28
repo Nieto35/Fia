@@ -9,10 +9,10 @@ export default function Footer() {
             <div className="flex justify-center pt-5">
                 <img
                 role="img"
-                aria-label="Logo la placita delivery"
+                aria-label="Logo Fia Valencia"
                 className="w-32"
                 src="https://nieto35.github.io/Fia/logos/fia-motorsport-games-2024-white.svg"
-                alt="logo la placita delivery"
+                alt="logo Fia Valencia"
                 />
             </div>
             <h2 className="text-center text-white mt-5 font-bold">¡Síguenos en nuestras redes!</h2>
@@ -22,28 +22,28 @@ export default function Footer() {
                 <a href="https://www.facebook.com/fiamotorsportgames/">
                     <img
                     role="img"
-                    aria-label="Logo la placita delivery"
+                    aria-label="Logo Fia Valencia"
                     className="w-8 h-8 text-white"
                     src="https://nieto35.github.io/Fia/redes/facebook.svg"
-                    alt="logo la placita delivery"
+                    alt="logo Fia Valencia"
                     />
                 </a>
                 <a href="https://www.instagram.com/fia_motorsport_games/">
                     <img
                     role="img"
-                    aria-label="Logo la placita delivery"
+                    aria-label="Logo Fia Valencia"
                     className="w-8 h-8"
                     src="https://nieto35.github.io/Fia/redes/instagram.svg"
-                    alt="logo la placita delivery"
+                    alt="logo Fia Valencia"
                     />
                 </a>
                 <a href="https://www.threads.net/@fia_motorsport_games">
                     <img
                     role="img"
-                    aria-label="Logo la placita delivery"
+                    aria-label="Logo Fia Valencia"
                     className="w-8 h-8"
                     src="https://nieto35.github.io/Fia/redes/icon--threads--black.svg"
-                    alt="logo la placita delivery"
+                    alt="logo Fia Valencia"
                     />
                 </a>
                 </div>
