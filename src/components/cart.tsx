@@ -13,6 +13,7 @@ export const Cart = () => {
     const handleReset = () => {
         setReset(!reset);
     }
+    
 
   useEffect(() => {
     const cookieProducts = Cookies.get('products');
