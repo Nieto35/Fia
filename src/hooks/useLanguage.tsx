@@ -7,7 +7,7 @@ import { useIntl } from 'react-intl'
  * @param {*} values object with specified formatterJS variables in languages
  * @returns
  */
-const useLanguage = ({ id, defaultMessage = 'Not defined' }, values = {}) => {
+const useLanguage = ({ id, defaultMessage = 'Not defined' }: { id: string, defaultMessage?: string}, values = {}) => {
   const intl = useIntl()
 
   return intl.formatMessage({
