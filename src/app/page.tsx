@@ -9,7 +9,7 @@ import Info from '@/components/info'
 import Navbar from '@/components/navbar'
 import React from 'react'
 import {useState} from 'react'
-
+import { useLanguage } from '@/hooks/useLanguage'
 
 
 export default function Home() {
@@ -21,7 +21,8 @@ export default function Home() {
   }
 
   return (
-    <>
+    < >
+
       <div className="flex flex-col bg-white">
         <Navbar />
         <Header />
@@ -29,15 +30,18 @@ export default function Home() {
       <ScrollToTopButton reset={reset} />
       <Info/>
       
-      <div className='hidden lg:block'>
-        <CardDesktop handleReset={handleReset} />
-      </div>
-      <div className='lg:hidden'>
-        <Card  handleReset={handleReset}/>
+      <div id="cardSection">
+        <div className='hidden lg:block'>
+          <CardDesktop handleReset={handleReset} />
+        </div>
+        <div className='lg:hidden'>
+          <Card  handleReset={handleReset}/>
+        </div>
       </div>
 
-      
-      <HowBuy/>
+      <div id="howToBuy">
+        <HowBuy/>
+      </div>      
 
 
       <Footer />

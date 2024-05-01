@@ -7,9 +7,26 @@ import { TbFriends } from 'react-icons/tb'
 import { IoFishOutline } from "react-icons/io5";
 import { LuVegan } from "react-icons/lu";
 import { LuEuro } from "react-icons/lu";
+import { useLanguage } from '@/hooks/useLanguage'
 
 // row for description
 import { IoIosArrowForward } from 'react-icons/io'
+
+export const TextCard = ({text}: {text: string}) => {
+  const riceText = useLanguage({id: text});
+
+  return (
+    <p className="ml-2">{riceText}</p>
+  );
+}
+
+export const TitleCard = ({text}: {text: string}) => {
+  const riceText = useLanguage({id: text});
+
+  return (
+    <>{riceText}</>
+  );
+}
 
 export const cards = [
   {
@@ -22,11 +39,11 @@ export const cards = [
       <ul>
         <li className="flex items-center">
           <IoIosArrowForward className="text-secondary" />
-          <p className="ml-2">Arroz.</p>
+          <TextCard text="rice" />
         </li>
         <li className="flex items-center">
           <IoIosArrowForward className="text-secondary" />
-          <p className="ml-2">Gambas.</p>
+          <TextCard text="shrimp" />
         </li>
         <li className="flex items-center justify-end">
           <LuEuro size={30} className="text-secondary" />
@@ -38,18 +55,18 @@ export const cards = [
   {
     id: 2,
     image: 'https://nieto35.github.io/Fia/cards/croquetas.jpg',
-    title: 'Croquetas',
+    title: <TitleCard text="Croquettes" />,
     icon: <GiHotMeal size={50} />,
     price: 30,
     description: (
         <ul>
         <li className="flex items-center">
           <IoIosArrowForward className="text-secondary" />
-          <p className="ml-2">Cerdo.</p>
+          <TextCard text="pig" />
         </li>
         <li className="flex items-center">
           <IoIosArrowForward className="text-secondary" />
-          <p className="ml-2">Masa.</p>
+          <TextCard text="dough" />
         </li>
         <li className="flex items-center justify-end">
           <LuEuro size={30} className="text-secondary" />
@@ -68,15 +85,15 @@ export const cards = [
       <ul>
         <li className="flex items-center">
           <IoIosArrowForward className="text-secondary" />
-          <p className="ml-2">Atún.</p>
+          <TextCard text="tuna" />
         </li>
         <li className="flex items-center">
           <IoIosArrowForward className="text-secondary" />
-          <p className="ml-2">Pan.</p>
+          <TextCard text="bread" />
         </li>
         <li className="flex items-center">
           <IoIosArrowForward className="text-secondary" />
-          <p className="ml-2">Vegetales.</p>
+          <TextCard text="vegetables" />
         </li>
         <li className="flex items-center justify-end">
           <LuEuro size={30} className="text-secondary" />
@@ -95,15 +112,15 @@ export const cards = [
         <ul>
         <li className="flex items-center">
           <IoIosArrowForward className="text-secondary" />
-          <p className="ml-2">Vegano.</p>
+          <TextCard text="vegan" />
         </li>
         <li className="flex items-center">
           <IoIosArrowForward className="text-secondary" />
-          <p className="ml-2">Verduras.</p>
+          <TextCard text="vegetables" />
         </li>
         <li className="flex items-center">
           <IoIosArrowForward className="text-secondary" />
-          <p className="ml-2">Garbanzo.</p>
+          <TextCard text="chickpea" />
         </li>
         <li className="flex items-center justify-end">
           <LuEuro size={30} className="text-secondary" />

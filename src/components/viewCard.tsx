@@ -4,6 +4,8 @@ import Cookies from 'js-cookie'
 import { useEffect, useState } from 'react'
 import { CiShoppingCart } from 'react-icons/ci'
 import { Modal } from './modal'
+import { useLanguage } from '@/hooks/useLanguage'
+import { TitleCard } from './infocards'
 
 const Calendar = ({
   selectedDays,
@@ -28,7 +30,7 @@ const Calendar = ({
               selectedDays[index] ? 'bg-blue-500 text-white' : 'bg-white text-blue-500'
             }`}
           >
-            <p className="text-xs uppercase">Octubre</p>
+            <p className="text-xs uppercase"><TitleCard text='october'/></p>
             <p className="text-6xl">{day}</p>
             <p className="text-xs uppercase">2024</p>
           </div>
@@ -140,7 +142,7 @@ export const ViewCard = ({
                         className="mt-5 bg-secondary text-white px-4 py-2 rounded-full font-black"
                         onClick={() => handleOpen(card.title, card.id)}
                       >
-                        Comprar
+                        <TitleCard text="buy" />
                       </button>
                     </div>
                   </div>
@@ -153,7 +155,7 @@ export const ViewCard = ({
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <h2 className="text-center text-secondary font-extrabold m-5 ">{title}</h2>
         <h3 className="text-center text-secondary font-bold m-5">
-          Selecciona los dias que vas a querer esta comida
+        <TitleCard text='select_the_days_you_will_want_this_meal'/>
         </h3>
         <Calendar selectedDays={selectedDays} setSelectedDays={setSelectedDays} />
 
@@ -165,7 +167,7 @@ export const ViewCard = ({
             onClick={handleAddToCart}
             disabled={allDaysFalse}
           >
-            Añadir al carrito
+            <TitleCard text='add_to_cart'/>
             <CiShoppingCart size={30} />
           </button>
         </div>

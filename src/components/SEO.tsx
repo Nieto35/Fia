@@ -57,10 +57,10 @@ const SEO: React.FC<SEOProps> = ({ title, description, image, canonical }) => {
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
 
-      <link rel="icon" type="image/svg+xml" href="/delivery.ico" />
-      <link rel="apple-touch-icon" href="/delivery.ico" />
+      <link rel="icon" type="image/svg+xml" href="https://nieto35.github.io/Fia/logos/fia-motorsport-games-2024-white.svg" />
+      <link rel="apple-touch-icon" href="https://nieto35.github.io/Fia/logos/fia-motorsport-games-2024-white.svg" />
 
-      <link rel="icon" type="image/svg+xml" href="/delivery.ico" />
+      <link rel="icon" type="image/svg+xml" href="https://nieto35.github.io/Fia/logos/fia-motorsport-games-2024-white.svg" />
       <meta name="msapplication-config" content="/browserconfig.xml" />
 
       {/* <script src="/registerSW.js"></script> */}

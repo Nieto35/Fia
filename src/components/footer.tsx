@@ -1,4 +1,4 @@
-
+import { useLanguage } from "@/hooks/useLanguage"
 
 export default function Footer() {
   return (
@@ -15,7 +15,8 @@ export default function Footer() {
                 alt="logo Fia Valencia"
                 />
             </div>
-            <h2 className="text-center text-white mt-5 font-bold">¡Síguenos en nuestras redes!</h2>
+            <h2 className="text-center text-white mt-5 font-bold">
+                {useLanguage({id: "follow_us_on_our_networks"})}</h2>
 
             <div className="flex justify-center mt-2">
                 <div className="flex justify-around w-3/5">

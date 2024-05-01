@@ -4,31 +4,35 @@ import styles from './Navbar.module.css'
 import { usePathname } from 'next/navigation'
 import { DrawnXLogo } from './drawnXLogo'
 import { HamburgerButton } from './hamburgerButton'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import SEO from './SEO'
+import { useLanguage } from '@/hooks/useLanguage'
+import { langContext } from '@/context/langContext'
+
 
 export default function Navbar()  {
+  const { changeLanguage ,flagCode } = useContext(langContext);
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false);
 
-  const pages = [
-    {name: 'Inicio', href: '/Fia'},
-    { name: 'Menús', href: '/#' },
-    { name: '¿Cómo comprar?', href: '/#'},
-  ].map((page) => ({
-    ...page,
-    active: pathname === page.href
-  }))
-
+const pages = [
+  {name: useLanguage({id: 'home'}), href: '/Fia'},
+  {name: useLanguage({id: 'menus'}), href: '#cardSection'},
+  {name: useLanguage({id: 'how_to_buy'}), href: '#howToBuy'},
+].map((page) => ({
+  ...page,
+  active: pathname === page.href
+}))
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
 
+
   return (
     <header className="mb-1 h-16 max-w-[100vw] lg:h-24">
       <SEO canonical='https://FiaValencia.com/' title="Fia Valencia" description="Web Oficial de Fia Valencia, pagina para comprar comida Valencia." image='/LOGO-PLACITA-WEB.jpg' />
-      <nav className="group flex h-full w-full items-center justify-between px-10 lg:justify-center">
+      <nav className="group flex h-full w-full items-center justify-between px-6 lg:justify-center">
       {
         pages.map(({ name, href, active }, key) => (
           <React.Fragment key={key}>
@@ -48,9 +52,17 @@ export default function Navbar()  {
           </React.Fragment>
         ))
       }
-        <a href="/Fia" className="block lg:hidden">
-          <DrawnXLogo />
-        </a>
+      <div className="flex items-center gap-4 px-2 h-full">
+        <div className="flex items-center gap-2 cursor-pointer h-full relative overflow-hidden" onClick={() => changeLanguage('en-GB')}>
+          <img src='https://nieto35.github.io/Fia/language/english.svg' alt="English" className={`w-full h-6 object-cover ${flagCode === 'gb' ? 'border-2 border-secondary' : ''}`} />
+          <div className="absolute inset-0 bg-gradient-to-b from-secondary to-transparent transition-opacity duration-800 ease-in-out opacity-0 hover:opacity-100"></div>
+        </div>
+        <div className="flex items-center gap-2 cursor-pointer h-full relative overflow-hidden" onClick={() => changeLanguage('es-ES')}>
+          <img src='https://nieto35.github.io/Fia/language/Bandera_de_Espana.svg' alt="Español" className={`w-full h-6 object-cover ${flagCode === 'es' ? 'border-2 border-secondary' : ''}`} />
+          <div className="absolute inset-0 bg-gradient-to-b from-secondary to-transparent transition-opacity duration-800 ease-in-out opacity-0 hover:opacity-100"></div>
+        </div>
+      </div>
+       
         <HamburgerButton toggleMenu={toggleMenu} isOpen={isOpen} />
         <div className={`fixed inset-0 z-[888] flex w-screen flex-col items-center overflow-x-auto bg-background-color px-10 lg:hidden ${!isOpen && 'hidden'}`} >
           <aside className="flex min-h-16 w-full items-center justify-between">

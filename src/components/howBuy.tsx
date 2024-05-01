@@ -1,15 +1,13 @@
-import { LuBeef } from "react-icons/lu";
-import { BsBox2 } from "react-icons/bs";
-import { BsHouseDoor } from "react-icons/bs";
 import { PiBowlFoodThin } from "react-icons/pi";
 import { PiCalendarLight } from "react-icons/pi";
 import { BsQrCode } from "react-icons/bs";
+import { useLanguage } from "@/hooks/useLanguage";
 
 export default function HowBuy() {
   return (
     <div className="">
       <h2 className='text-center text-secondary text-3xl font-black leading-none mb-4 mt-24 lg:text-5xl'>
-        ¿Cómo comprar?
+        {useLanguage({id: "how_to_buy"})}
       </h2>
 
       <div className="w-full lg:flex lg:justify-center">
@@ -21,10 +19,11 @@ export default function HowBuy() {
             </div>
                 <h3 className="text-secondary text-2xl font-bold text-left mt-5 lg:text-center">
                 <span className="hidden lg:inline">1. </span>
-                    Elección de plato</h3>
+                    {useLanguage({id: "food_choice"})}
+                </h3>
                 <p className="mt-2 text-left lg:text-center">
-                    
-                    Elige el plato que más te guste de nuestras opciones.
+                
+                    {useLanguage({id: "choose_the_food_you_like_the_most_from_our_options"})}
                 </p>
                 <div className="lg:hidden absolute top-20 -left-7 w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
                     <span className="text-white text-4xl">1</span>
@@ -37,8 +36,11 @@ export default function HowBuy() {
                 </div>
                 <h3 className="text-secondary text-2xl font-bold text-left mt-5 lg:text-center">
                 <span className="hidden lg:inline">2. </span>
-                    Selecciona los días</h3>
-                <p className="mt-2 text-left lg:text-center">Podras seleccionar los días en los cuales quieres ese menú.</p>
+                {useLanguage({id: "select_the_days"})}
+                </h3>
+                <p className="mt-2 text-left lg:text-center">
+                {useLanguage({id: "you_can_select_the_days_on_which_you_want_that_menu"})}
+                    </p>
                 <div className="lg:hidden absolute top-36 -left-7 w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
                     <span className="text-white text-4xl">2</span>
                 </div>
@@ -49,8 +51,9 @@ export default function HowBuy() {
             </div>
                 <h3 className="text-secondary text-2xl font-bold text-left mt-5 lg:text-center">
                 <span className="hidden lg:inline">3. </span>
-                Pagar y descargar QR</h3>
-                <p className="mt-2 text-left lg:text-center">Podras darle al carrito, despues de pagar recibiras un QR en tu correo el cual debes presentar el día del evento.</p>
+                {useLanguage({id: "pay_and_download_QR"})}</h3>
+                <p className="mt-2 text-left lg:text-center">
+                {useLanguage({id: "you_can_click_on_the_cart_after_paying_you_will_receive_a_QR_in_your_email_which_you_must_present_on_the_day_of_the_event"})}</p>
                 <div className="lg:hidden absolute top-36 -left-7 w-12 h-12 bg-secondary rounded-full flex items-center justify-center ">
                     <span className="text-white text-4xl">3</span>
                 </div>
