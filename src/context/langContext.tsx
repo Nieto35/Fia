@@ -47,7 +47,7 @@ const LangProvider = ({ children }: props) => {
   const [flagCode, setFlagCode] = useState<string>(DEFAULT_FLAG)
   const [messages, setMessages] = useState(DEFAULT_MESSAGES)
 
-  const changeLanguage = (lang) => {
+  const changeLanguage = (lang: any) => {
     switch (lang) {
       case 'en-GB':
         setLocale('en-GB')
