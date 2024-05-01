@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie'
 import { FaRegTrashCan } from 'react-icons/fa6'
 import { LuEuro } from "react-icons/lu";
-
+import { TitleCard } from './infocards';
 interface Product {
   productId: string;
   // Agrega aquí cualquier otra propiedad que los productos puedan tener
@@ -54,7 +54,7 @@ export const CartComponent = ({handleReset, id, image, days, title, price, produ
                   key={day}
                   className={`m-2 flex flex-col items-center justify-center font-bold rounded-lg shadow-lg w-14 h-14 bg-blue-500 text-white`}
                   >
-                  <p className="text-xs">Octubre</p>
+                  <p className="text-xs"><TitleCard text='october'/></p>
                   <p className="text-xs">{day}</p>
                   <p className="text-xs">2024</p>
                   </div>
