@@ -54,11 +54,11 @@ const pages = [
       }
       <div className="flex items-center gap-4 px-2 h-full">
         <div className="flex items-center gap-2 cursor-pointer h-full relative overflow-hidden" onClick={() => changeLanguage('en-GB')}>
-          <img src='https://nieto35.github.io/Fia/language/english.svg' alt="English" className={`w-full h-6 object-cover ${flagCode === 'gb' ? 'border-2 border-secondary' : ''}`} />
+          <img src='https://nieto35.github.io/Fia/language/english.svg' alt="English" className={`w-10 h-6 object-cover ${flagCode === 'gb' ? 'border-2 border-secondary' : ''}`} />
           <div className="absolute inset-0 bg-gradient-to-b from-secondary to-transparent transition-opacity duration-800 ease-in-out opacity-0 hover:opacity-100"></div>
         </div>
         <div className="flex items-center gap-2 cursor-pointer h-full relative overflow-hidden" onClick={() => changeLanguage('es-ES')}>
-          <img src='https://nieto35.github.io/Fia/language/Bandera_de_Espana.svg' alt="Español" className={`w-full h-6 object-cover ${flagCode === 'es' ? 'border-2 border-secondary' : ''}`} />
+          <img src='https://nieto35.github.io/Fia/language/Bandera_de_Espana.svg' alt="Español" className={`w-10 h-6 object-cover ${flagCode === 'es' ? 'border-2 border-secondary' : ''}`} />
           <div className="absolute inset-0 bg-gradient-to-b from-secondary to-transparent transition-opacity duration-800 ease-in-out opacity-0 hover:opacity-100"></div>
         </div>
       </div>
